@@ -1,13 +1,14 @@
 """Configuration file for the Sphinx documentation builder."""
+
 # # This file only contains a selection of the most common options.
 # For a full # list see the documentation: # https://www.sphinx-doc.org/en/master/usage/configuration.html
 # # -- Path setup -------------------------------------------------------------- #
 # If extensions (or modules to document with autodoc) are in another directory, # add these directories
 # to sys.path here. If the directory is relative to the # documentation root, use os.path.abspath
 # to make it absolute, like shown here.
+import datetime as dt
 import os
 import sys
-import datetime as dt
 
 sys.path.insert(0, os.path.abspath("../.."))
 # # -- Project information -----------------------------------------------------
@@ -55,3 +56,4 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+

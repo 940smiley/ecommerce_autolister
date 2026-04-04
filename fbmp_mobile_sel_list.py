@@ -4,35 +4,22 @@ Allows user to leverage an excel sheet to automatically add products to FBMP Mob
 
 Author: ehgp
 """
-from webscraperali import imagewebscraperali
-from webscraperchewy import imagewebscraperchewy
-from webscraperebay import imagewebscraperebay
-from webscraperetsy import imagewebscraperetsy
-from webscraperwayfair import imagewebscraperwayfair
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-import chromedriver_autoinstaller
-from getpass import getuser
-import time
+
+import datetime as dt
 import logging
 import logging.config
-import random
-import pandas as pd
 import os
-import string
 import re
-import sys
-import datetime as dt
-from os import listdir
-from os.path import isfile, join
+import string
+import time
+from getpass import getuser
 from pathlib import Path
-import yaml
+
+import chromedriver_autoinstaller
 import keyring
 import pyautogui
+import yaml
+from selenium import webdriver
 
 
 def format_filename(s):
@@ -155,3 +142,4 @@ time.sleep(2)
 driver.find_element_by_xpath(
     "/html/body/div[1]/div/div[4]/div/div[1]/div/form/div[2]/div/div/div[7]/div[3]"
 ).click()
+

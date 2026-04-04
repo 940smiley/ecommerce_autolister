@@ -293,3 +293,4 @@ WAYFAIR_WEBSCRAPER_PARAMS:
 
     WAYFAIR_SOUP_IMGLINK_EXT: '"img", attrs={"class": "pl-FluidImage-image"}'
 
+

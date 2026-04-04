@@ -4,16 +4,15 @@ Scrapes images from your list on WALMART
 
 Author: ehgp
 """
+
 import os
-from os import listdir
-from os.path import isfile, join
-from pathlib import Path
-import requests
-from bs4 import BeautifulSoup
 import re
 import string
-import json
-import shutil
+from pathlib import Path
+
+import requests
+from bs4 import BeautifulSoup
+
 
 def format_filename(s):
     """Take a string and return a valid filename constructed from the string.
@@ -57,3 +56,4 @@ for idx, url in enumerate(imgfilename):
     with open(Path(path, "Dropshipping Items", title, f"{title}{idx}.jpg"), "wb") as f:
         response = requests.get(url.replace("96", "300"))
         f.write(response.content)
+
